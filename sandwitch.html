@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Grilled Sandwich | CheesY MomentS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="project.html#home">CheesY MomentS</a>
+        <nav>
+            <ul>
+                <li><a href="project.html#home">Home</a></li>
+                <li><a href="project.html#menu">Menu</a></li>
+                <li><a href="project.html#about">About</a></li>
+                <li><a href="project.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="order-details" data-item-name="Grilled Sandwich" data-item-price="199">
+        <div class="order-food">
+            <img src="https://static.toiimg.com/thumb/54714340.cms?imgsize=458099&width=800&height=800" alt="Grilled Sandwich">
+            <div>
+                <p class="eyebrow">Order now</p>
+                <h1>Grilled Sandwich</h1>
+                <p>Crispy sandwich stuffed with cheese and veggies.</p>
+                <span class="price">Rs. 199</span>
+            </div>
+        </div>
+
+        <form class="order-form">
+            <label>Your Name<input type="text" name="customerName" placeholder="Enter your name" required></label>
+            <label>Your Email<input type="email" name="email" placeholder="name@example.com" required></label>
+            <label>Phone Number<input type="tel" name="phone" placeholder="10 digit mobile number" pattern="[0-9]{10}" required></label>
+            <label>Quantity<input type="number" name="quantity" min="1" max="10" value="1" required></label>
+            <label>Delivery Address<textarea name="address" placeholder="House number, street, city" rows="3" required></textarea></label>
+            <label>Special Instructions<textarea name="instructions" placeholder="Extra toasted, no tomato, etc." rows="2"></textarea></label>
+            <div class="order-total">Total: <strong data-total>Rs. 199</strong></div>
+            <button type="submit" class="btn">Confirm Order</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>(c) 2026 CheesY MomentS | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheesY MomentS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a class="logo" href="project.html#home">CheesY MomentS</a>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="account-actions" data-auth-actions></div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Fresh Food, Fast Delivery</h1>
+            <p>Choose your favorite meal and place an order in minutes.</p>
+            <a href="#menu" class="btn">Explore Menu</a>
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-highlights" aria-label="Restaurant highlights">
+            <span>30 min delivery</span>
+            <span>Fresh ingredients</span>
+            <span>Student friendly prices</span>
+        </div>
+        <div class="menu-tools">
+            <label class="search-box">
+                <span>Search food</span>
+                <input type="search" data-search-menu placeholder="Search burgers, pizza, pasta...">
+            </label>
+            <select data-category-filter aria-label="Filter menu category">
+                <option value="all">All Categories</option>
+                <option value="Meals">Meals</option>
+                <option value="Snacks">Snacks</option>
+                <option value="Drinks">Drinks</option>
+                <option value="Desserts">Desserts</option>
+            </select>
+            <select data-sort-menu aria-label="Sort menu items">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name">Name A to Z</option>
+            </select>
+        </div>
+        <p class="menu-result" data-menu-result></p>
+        <div class="menu-container">
+            <div class="food-card" data-food-card data-name="Cheese Burger" data-category="Meals" data-price="249" data-tags="burger cheese grilled meal">
+                <a href="burger.html">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd" alt="Cheese Burger">
+                    <span class="badge">Best Seller</span>
+                    <h3>Cheese Burger</h3>
+                    <p>Juicy grilled burger with melted cheese and fresh veggies.</p>
+                    <span class="price">Rs. 249</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Cheese Burger" data-price="249">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Veg Pizza" data-category="Meals" data-price="449" data-tags="pizza cheese vegetables meal">
+                <a href="pizza.html">
+                    <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591" alt="Veg Pizza">
+                    <h3>Veg Pizza</h3>
+                    <p>Cheesy pizza topped with fresh vegetables and herbs.</p>
+                    <span class="price">Rs. 449</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Veg Pizza" data-price="449">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="White Sauce Pasta" data-category="Meals" data-price="299" data-tags="pasta creamy white sauce meal">
+                <a href="pasta.html">
+                    <img src="https://www.indianhealthyrecipes.com/wp-content/uploads/2024/04/white-sauce-pasta-500x500.jpg" alt="White Sauce Pasta">
+                    <h3>White Sauce Pasta</h3>
+                    <p>Creamy pasta cooked with herbs and seasonal veggies.</p>
+                    <span class="price">Rs. 299</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="White Sauce Pasta" data-price="299">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Fresh Salad" data-category="Meals" data-price="199" data-tags="salad healthy vegetables meal">
+                <a href="salad.html">
+                    <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c" alt="Fresh Salad">
+                    <span class="badge badge-green">Healthy</span>
+                    <h3>Fresh Salad</h3>
+                    <p>Healthy salad with crisp seasonal vegetables.</p>
+                    <span class="price">Rs. 199</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Fresh Salad" data-price="199">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Grilled Sandwich" data-category="Snacks" data-price="199" data-tags="sandwich cheese grilled snack">
+                <a href="sandwitch.html">
+                    <img src="https://static.toiimg.com/thumb/54714340.cms?imgsize=458099&width=800&height=800" alt="Grilled Sandwich">
+                    <h3>Grilled Sandwich</h3>
+                    <p>Crispy sandwich stuffed with cheese and veggies.</p>
+                    <span class="price">Rs. 199</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Grilled Sandwich" data-price="199">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="French Fries" data-category="Snacks" data-price="189" data-tags="fries potato crispy snack">
+                <a href="fries.html">
+                    <img src="https://images.themodernproper.com/production/posts/2022/Homemade-French-Fries_8.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1662474181&s=50bccc38a736ef0e0a6e261ad23378f4" alt="French Fries">
+                    <h3>French Fries</h3>
+                    <p>Golden crispy fries served with ketchup.</p>
+                    <span class="price">Rs. 189</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="French Fries" data-price="189">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Paneer Wrap" data-category="Snacks" data-price="229" data-tags="paneer wrap spicy snack">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1626700051175-6818013e1d4f" alt="Paneer Wrap">
+                    <h3>Paneer Wrap</h3>
+                    <p>Soft wrap filled with spicy paneer, onions, and mint sauce.</p>
+                    <span class="price">Rs. 229</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Paneer Wrap" data-price="229">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Veg Momos" data-category="Snacks" data-price="169" data-tags="momos steamed spicy snack">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1625220194771-7ebdea0b70b9" alt="Veg Momos">
+                    <span class="badge">New</span>
+                    <h3>Veg Momos</h3>
+                    <p>Steamed dumplings served with spicy red chutney.</p>
+                    <span class="price">Rs. 169</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Veg Momos" data-price="169">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Paneer Tikka" data-category="Meals" data-price="329" data-tags="paneer tikka grilled meal">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1567188040759-fb8a883dc6d8" alt="Paneer Tikka">
+                    <h3>Paneer Tikka</h3>
+                    <p>Smoky paneer cubes marinated with Indian spices.</p>
+                    <span class="price">Rs. 329</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Paneer Tikka" data-price="329">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Hakka Noodles" data-category="Meals" data-price="259" data-tags="noodles chinese vegetables meal">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1612929633738-8fe44f7ec841" alt="Hakka Noodles">
+                    <h3>Hakka Noodles</h3>
+                    <p>Wok tossed noodles with crunchy vegetables and sauces.</p>
+                    <span class="price">Rs. 259</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Hakka Noodles" data-price="259">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Chocolate Brownie" data-category="Desserts" data-price="159" data-tags="brownie chocolate dessert">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c" alt="Chocolate Brownie">
+                    <h3>Chocolate Brownie</h3>
+                    <p>Warm fudgy brownie served with chocolate drizzle.</p>
+                    <span class="price">Rs. 159</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Chocolate Brownie" data-price="159">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Vanilla Ice Cream" data-category="Desserts" data-price="129" data-tags="ice cream vanilla dessert">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1563805042-7684c019e1cb" alt="Vanilla Ice Cream">
+                    <h3>Vanilla Ice Cream</h3>
+                    <p>Creamy vanilla scoops finished with caramel topping.</p>
+                    <span class="price">Rs. 129</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Vanilla Ice Cream" data-price="129">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Cold Coffee" data-category="Drinks" data-price="149" data-tags="coffee cold drink">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735" alt="Cold Coffee">
+                    <h3>Cold Coffee</h3>
+                    <p>Chilled creamy coffee topped with chocolate syrup.</p>
+                    <span class="price">Rs. 149</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Cold Coffee" data-price="149">Add to Cart</button>
+            </div>
+            <div class="food-card" data-food-card data-name="Fresh Lime Soda" data-category="Drinks" data-price="99" data-tags="lime soda lemon drink">
+                <a href="project.html#menu">
+                    <img src="https://images.unsplash.com/photo-1621263764928-df1444c5e859" alt="Fresh Lime Soda">
+                    <h3>Fresh Lime Soda</h3>
+                    <p>Refreshing sweet and salty lime soda with mint.</p>
+                    <span class="price">Rs. 99</span>
+                </a>
+                <button class="quick-add" type="button" data-quick-add data-name="Fresh Lime Soda" data-price="99">Add to Cart</button>
+            </div>
+        </div>
+        <aside class="cart-panel" data-cart-panel>
+            <h3>Cart</h3>
+            <div data-cart-items></div>
+            <p class="cart-total">Total: <strong data-cart-total>Rs. 0</strong></p>
+            <div class="cart-actions">
+                <button class="btn" type="button" data-cart-checkout>Checkout Cart</button>
+                <button class="btn btn-secondary" type="button" data-clear-cart>Clear Cart</button>
+            </div>
+        </aside>
+    </section>
+
+    <div class="auth-modal" data-auth-modal hidden>
+        <form class="auth-box" data-login-form>
+            <button class="close-modal" type="button" data-close-auth aria-label="Close login">x</button>
+            <p class="eyebrow">Member Login</p>
+            <h2>Welcome Back</h2>
+            <label>Name<input type="text" name="name" placeholder="Enter your name" required></label>
+            <label>Email<input type="email" name="email" placeholder="name@example.com" required></label>
+            <label>Phone<input type="tel" name="phone" placeholder="10 digit mobile number" pattern="[0-9]{10}"></label>
+            <button class="btn" type="submit">Login</button>
+        </form>
+    </div>
+    <div class="toast" data-toast role="status" aria-live="polite"></div>
+
+    <section class="services" id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <h3>Fast Delivery</h3>
+                <p>Get your food delivered hot and fresh within 30 minutes.</p>
+            </div>
+            <div class="service-card">
+                <h3>Quality Ingredients</h3>
+                <p>We use fresh ingredients for every dish.</p>
+            </div>
+            <div class="service-card">
+                <h3>Easy Ordering</h3>
+                <p>Fill in your details once and receive a clear order summary.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            CheesY MomentS is a simple online food ordering website created for quick browsing,
+            easy checkout, and clear order confirmation.
+        </p>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2>Contact</h2>
+        <p>Email: cheesymoments@gmail.com</p>
+        <p>Phone: +91 90349 30078</p>
+    </section>
+
+    <footer>
+        <p>(c) 2026 CheesY MomentS | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
